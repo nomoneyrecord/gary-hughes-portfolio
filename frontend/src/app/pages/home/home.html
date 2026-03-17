@@ -43,7 +43,7 @@
             Mobile application for managing vacations and excursions with CRUD flows,
             validation, alerts, and local persistence.
           </p>
-          <a routerLink="/portfolio">View Details</a>
+          <a [routerLink]="['/portfolio']" [queryParams]="{ project: 'vacation-scheduler' }">View Details</a>
         </article>
 
         <article class="content-card">
@@ -53,7 +53,7 @@
             Business-focused Spring application emphasizing application flow,
             validation logic, and structured backend development.
           </p>
-          <a routerLink="/portfolio">View Details</a>
+          <a [routerLink]="['/portfolio']" [queryParams]="{ project: 'inventory-application' }">View Details</a>
         </article>
 
         <article class="content-card">
@@ -63,7 +63,7 @@
             Full-stack academic application work centered on backend integration,
             architecture, and practical system design.
           </p>
-          <a routerLink="/portfolio">View Details</a>
+          <a [routerLink]="['/portfolio']" [queryParams]="{ project: 'landon-hotel' }">View Details</a>
         </article>
       </div>
     </section>

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 interface Project {
   id: string;
@@ -17,7 +17,9 @@ interface Project {
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.css'
 })
-export class Portfolio {
+export class Portfolio implements OnInit {
+  constructor(private route: ActivatedRoute) {}
+
   projects: Project[] = [
     {
       id: 'vacation-scheduler',
@@ -49,6 +51,22 @@ export class Portfolio {
   ];
 
   selectedProject: Project | null = null;
+
+  ngOnInit(): void {
+    this.route.queryParamMap.subscribe(params => {
+      const projectId = params.get('project');
+
+      if (!projectId) {
+        return;
+      }
+
+      const match = this.projects.find(project => project.id === projectId);
+
+      if (match) {
+        this.selectedProject = match;
+      }
+    });
+  }
 
   openProject(project: Project): void {
     this.selectedProject = project;
