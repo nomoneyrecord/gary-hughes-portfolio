@@ -2,3 +2,95 @@
   display: block;
   min-height: 100vh;
 }
+
+.content-section {
+  padding: 5rem 0;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+  max-width: 720px;
+}
+
+.section-eyebrow {
+  margin-bottom: 0.75rem;
+  color: #6ec1e4;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-heading h1 {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-heading p {
+  color: #b8c0cc;
+  line-height: 1.7;
+}
+
+.card-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.content-card {
+  flex: 1 1 320px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.project-image-placeholder {
+  min-height: 220px;
+  margin-bottom: 1rem;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b8c0cc;
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.card-tag {
+  margin-bottom: 0.75rem;
+  color: #6ec1e4;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.content-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.content-card p {
+  color: #b8c0cc;
+  line-height: 1.7;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-links a {
+  color: #f5f7fa;
+  text-decoration: none;
+  font-weight: 600;
+}
