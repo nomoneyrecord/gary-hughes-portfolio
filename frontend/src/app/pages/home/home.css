@@ -124,3 +124,71 @@ section p {
   color: #b8c0cc;
   max-width: 700px;
 }
+
+.content-section {
+  padding: 5rem 0;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+  max-width: 720px;
+}
+
+.section-eyebrow {
+  margin-bottom: 0.75rem;
+  color: #6ec1e4;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-heading p {
+  color: #b8c0cc;
+  line-height: 1.7;
+}
+
+.card-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.content-card {
+  flex: 1 1 300px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.card-tag {
+  margin-bottom: 0.75rem;
+  color: #6ec1e4;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.content-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+}
+
+.content-card p {
+  margin-bottom: 1rem;
+  color: #b8c0cc;
+  line-height: 1.7;
+}
+
+.content-card a {
+  color: #f5f7fa;
+  text-decoration: none;
+  font-weight: 600;
+}

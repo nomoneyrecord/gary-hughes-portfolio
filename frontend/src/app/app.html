@@ -1,13 +1,15 @@
 <header>
   <nav>
-    <div class="nav-brand">Gary Hughes Jr</div>
+    <div class="nav-brand">
+      <a routerLink="/">Gary Hughes Jr</a>
+    </div>
 
     <ul>
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/portfolio">Portfolio</a></li>
-      <li><a routerLink="/blog">Blog</a></li>
-      <li><a routerLink="/certifications">Certifications</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
+      <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+      <li><a routerLink="/portfolio" routerLinkActive="active-link">Portfolio</a></li>
+      <li><a routerLink="/blog" routerLinkActive="active-link">Blog</a></li>
+      <li><a routerLink="/certifications" routerLinkActive="active-link">Certifications</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active-link">Contact</a></li>
     </ul>
   </nav>
 </header>
