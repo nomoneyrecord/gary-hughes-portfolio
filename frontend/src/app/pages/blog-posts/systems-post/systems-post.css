@@ -1,0 +1,65 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.blog-post-page {
+  padding: 5rem 0;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.post-eyebrow {
+  margin-bottom: 1rem;
+  color: #6ec1e4;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.post-intro {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #d5dbe3;
+  margin-bottom: 2rem;
+  max-width: 760px;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post-content p {
+  margin: 0;
+  color: #b8c0cc;
+  line-height: 1.9;
+  font-size: 1rem;
+}
+
+.post-actions {
+  margin-top: 3rem;
+}
+
+.post-actions a {
+  color: #f5f7fa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.post-actions a:hover {
+  color: #6ec1e4;
+}

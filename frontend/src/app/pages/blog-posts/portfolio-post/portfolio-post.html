@@ -1,0 +1,63 @@
+<section class="blog-post-page">
+  <div class="page-container">
+    <p class="post-eyebrow">Software Engineering · March 2026</p>
+
+    <h1>Designing a Backend-Focused Portfolio with Angular and Spring Boot</h1>
+
+    <p class="post-intro">
+      I wanted this portfolio to reflect not just the projects I’ve built, but also how
+      I think about software structure, growth, and long-term maintainability.
+    </p>
+
+    <div class="post-content">
+      <p>
+        Instead of building a one-off static landing page, I decided to structure this
+        portfolio as a real application using Angular for the frontend and Spring Boot
+        for the backend. Part of that decision came from wanting the project to align
+        with the stack I’m actively developing in, but it also came from wanting the site
+        itself to demonstrate architecture, not just visual presentation.
+      </p>
+
+      <p>
+        The homepage is intentionally restrained. I wanted the design to feel clean,
+        technical, and slightly creative without becoming busy or distracting. That led
+        to a dark visual theme, strong spacing, simple navigation, and a landing page
+        that highlights projects, writing, certifications, and clear ways to connect.
+      </p>
+
+      <p>
+        Structurally, I separated the application shell from the page content early. The
+        shared navigation lives at the app level, while routed pages handle the Home,
+        Portfolio, Blog, Certifications, and Contact experiences. That made the site
+        easier to reason about and set it up to scale as new content gets added.
+      </p>
+
+      <p>
+        The Portfolio page also pushed me to think beyond static cards. I wanted a way to
+        preview projects quickly while still giving each one more context when selected.
+        That led to using a selected-project modal pattern rather than creating a
+        completely separate page for every project. It keeps the experience focused while
+        still allowing room for screenshots, summaries, repository links, and deeper
+        explanation.
+      </p>
+
+      <p>
+        The same thinking applies to the Blog section. The site starts with explicit blog
+        pages and routing rather than trying to overengineer a full content system too
+        early. Later, I can refactor that structure into slug-based routing and a more
+        data-driven setup, but for now the priority is clarity, maintainability, and
+        building a portfolio I can fully understand and explain.
+      </p>
+
+      <p>
+        More than anything, this project reflects how I want to approach software
+        engineering work: start with clear architecture, keep the experience clean, make
+        thoughtful tradeoffs, and leave room for the system to grow.
+      </p>
+    </div>
+
+    <div class="post-actions">
+      <a routerLink="/blog">Back to Blog</a>
+    </div>
+  </div>
+</section>

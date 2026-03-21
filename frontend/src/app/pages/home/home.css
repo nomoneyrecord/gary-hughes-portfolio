@@ -192,3 +192,48 @@ section p {
   text-decoration: none;
   font-weight: 600;
 }
+
+.cert-badge-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.cert-badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  transition: transform 0.2s ease;
+}
+
+.cert-badge-link:hover {
+  transform: translateY(-4px);
+}
+
+.cert-badge-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.cert-badge-itil {
+  transform: scale(2.4);
+  margin-bottom: 10px;
+}
+
+.cert-badge-comptia {
+  transform: scale(1.2);
+}
+
+.certifications-actions {
+  margin-top: 2rem;
+}

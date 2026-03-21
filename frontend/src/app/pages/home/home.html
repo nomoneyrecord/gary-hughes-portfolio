@@ -84,7 +84,8 @@
             Notes on structuring a portfolio site with scalable routing, clean UI decisions,
             and a full-stack architecture I can explain and extend.
           </p>
-          <a routerLink="/blog">Read More</a>
+
+          <a [routerLink]="['/blog/portfolio-post']">View Details</a>
         </article>
 
         <article class="content-card">
@@ -94,7 +95,7 @@
             A practical look at using hardware, troubleshooting, and experimentation to build
             stronger real-world engineering intuition.
           </p>
-          <a routerLink="/blog">Read More</a>
+          <a [routerLink]="['/blog/systems-post']">View Details</a>
         </article>
 
         <article class="content-card">
@@ -104,7 +105,7 @@
             Reflections on learning data structures and algorithms through repeated pattern
             recognition, debugging, and deliberate practice.
           </p>
-          <a routerLink="/blog">Read More</a>
+          <a routerLink="/blog/neetcode-post">Read More</a>
         </article>
       </div>
     </section>
@@ -114,31 +115,35 @@
         <p class="section-eyebrow">Credentials</p>
         <h2>Certifications</h2>
         <p>
-          Relevant certifications and technical milestones that support my development as a
-          software engineer.
+          Technical credentials and milestones across cloud, service management, software
+          engineering, and web development.
         </p>
       </div>
 
-      <div class="card-grid">
-        <article class="content-card">
-          <p class="card-tag">AWS</p>
-          <h3>AWS Certified Cloud Practitioner</h3>
-          <p>
-            Foundational cloud knowledge covering AWS services, pricing, security, and core
-            infrastructure concepts.
-          </p>
-          <a routerLink="/certifications">View Details</a>
-        </article>
+      <div class="cert-badge-grid">
+        <a class="cert-badge-link" routerLink="/certifications" aria-label="View AWS Certified Cloud Practitioner certification">
+          <img src="/images/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner badge" />
+        </a>
 
-        <article class="content-card">
-          <p class="card-tag">ITIL</p>
-          <h3>ITIL 4 Foundation</h3>
-          <p>
-            Certification focused on service management principles, value delivery, and
-            continual improvement in technical environments.
-          </p>
-          <a routerLink="/certifications">View Details</a>
-        </article>
+        <a class="cert-badge-link" routerLink="/certifications" aria-label="View ITIL 4 Foundation certification">
+          <img class="cert-badge-itil" src="/images/ITIL-4-Foundation-Cetification.png" alt="ITIL 4 Foundation badge" />
+        </a>
+
+        <a class="cert-badge-link" routerLink="/certifications" aria-label="View CompTIA Project Plus certification">
+          <img class="cert-badge-comptia" src="/images/comptia-project-certification.5.png" alt="CompTIA Project Plus badge" />
+        </a>
+
+        <a class="cert-badge-link" routerLink="/certifications" aria-label="View WGU Front End Web Developer certificate">
+          <img src="/images/wgu-frontend-certification.png" alt="WGU Front End Web Developer badge" />
+        </a>
+
+        <a class="cert-badge-link" routerLink="/certifications" aria-label="View WGU Back-End Developer certificate">
+          <img src="/images/wgu-backend-certification.png" alt="WGU Back-End Developer badge" />
+        </a>
+      </div>
+
+      <div class="certifications-actions">
+        <a class="hero-button hero-button-secondary" routerLink="/certifications">View All Certifications</a>
       </div>
     </section>
 
