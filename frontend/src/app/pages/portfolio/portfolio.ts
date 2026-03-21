@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 interface Project {
   id: string;
@@ -13,7 +13,7 @@ interface Project {
 
 @Component({
   selector: 'app-portfolio',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.css'
 })
