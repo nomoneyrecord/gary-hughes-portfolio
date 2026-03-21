@@ -43,5 +43,4 @@ The site includes:
 gary-hughes-portfolio/
 ├── frontend/
 ├── backend/
-├── docs/
 └── README.md
